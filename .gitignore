@@ -1,0 +1,83 @@
+# ----------------------
+# OS files
+# ----------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------
+# Logs
+# ----------------------
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----------------------
+# Environment variables
+# ----------------------
+.env
+.env.*
+*.env
+
+# ----------------------
+# Dependency directories
+# ----------------------
+node_modules/
+vendor/
+
+# ----------------------
+# Build outputs
+# ----------------------
+dist/
+build/
+out/
+target/
+
+# ----------------------
+# Coverage
+# ----------------------
+coverage/
+
+# ----------------------
+# IDE / Editors
+# ----------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ----------------------
+# System files
+# ----------------------
+*.tmp
+*.temp
+*.cache
+
+# ----------------------
+# Python
+# ----------------------
+__pycache__/
+*.pyc
+*.pyo
+
+# ----------------------
+# Java / JVM
+# ----------------------
+*.class
+*.jar
+*.war
+
+# ----------------------
+# .NET
+# ----------------------
+bin/
+obj/
+
+# ----------------------
+# Misc
+# ----------------------
+*.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
