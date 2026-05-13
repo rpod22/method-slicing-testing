@@ -245,7 +245,10 @@ namespace System.Text
 #pragma warning restore S3928 // OK to use in .NET nanoFramework context
             }
 
-            value ??= string.Empty;
+            if (value == null)
+            {
+                value = string.Empty;
+            }
 
             if (startIndex > value.Length - length)
             {
@@ -861,7 +864,10 @@ namespace System.Text
 #pragma warning restore S3928 // OK to use in .NET nanoFramework context
             }
 
-            newValue ??= string.Empty;
+            if (newValue == null)
+            {
+                newValue = string.Empty;
+            }
 
             int newLength = newValue.Length;
             int oldLength = oldValue.Length;
@@ -1308,7 +1314,7 @@ namespace System.Text
             }
             else
             {
-                StringBuilder builder = new(
+                StringBuilder builder = new StringBuilder(
                     MathInternal.Max(count, DefaultCapacity),
                     chunk._maxCapacity,
                     chunk._chunkPrevious);
