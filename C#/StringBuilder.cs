@@ -129,7 +129,7 @@ namespace System.Text
         /// </exception>
         public int Capacity
         {
-            get => _chunkChars.Length + _chunkOffset;
+            get { return _chunkChars.Length + _chunkOffset; }
 
             set
             {
