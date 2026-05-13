@@ -159,7 +159,7 @@ namespace System.Text
         /// <exception cref="ArgumentOutOfRangeException">If <see cref="Length"/> is set to a value that is less than zero or greater than <see cref="MaxCapacity"/>.</exception>
         public int Length
         {
-            get => _chunkOffset + _chunkLength;
+            get { return _chunkOffset + _chunkLength; }
 
             set
             {
